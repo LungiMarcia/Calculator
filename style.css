@@ -41,7 +41,7 @@ input[type="text"] {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
-.btn {
+.btn-grid button {
   padding: 10px;
   border: none;
   border-radius: 6px;
@@ -51,10 +51,10 @@ input[type="text"] {
   cursor: pointer;
 }
 
-button button:active {
+.btn-grid button:active {
   transform: scale(0.99);
 }
 
-#operator {
+.operator {
   color: #2f9fff;
 }
