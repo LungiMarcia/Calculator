@@ -58,3 +58,18 @@ input[type="text"] {
 .operator {
   color: #2f9fff;
 }
+
+#value {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #2f9fff;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgb(52, 52, 52);
+  padding-top: 10px;
+}
