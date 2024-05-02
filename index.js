@@ -1,10 +1,24 @@
-const display = document.querySelector("#screen");
-const button = document.querySelector("button");
+document.addEventListener("DOMContentLoaded", function () {
+  var screen = document.getElementById("screen");
+  var buttons = document.querySelectorAll(".calculator button");
 
-const calculate = (btnValue) => {
-  console.log(btnValue);
-};
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var value = this.getAttribute("data-value");
 
-button.forEach((button) => {
-  button.addEventLister("click", (e) => calculate(e.target.dataset.value));
+      if (value === "=") {
+        try {
+          screen.value = eval(screen.value);
+        } catch (error) {
+          screen.value = "Error";
+        }
+      } else if (value === "AC") {
+        screen.value = "";
+      } else if (value === "C") {
+        screen.value = screen.value.slice(0, -1);
+      } else {
+        screen.value += value;
+      }
+    });
+  });
 });

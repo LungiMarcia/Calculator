@@ -51,7 +51,7 @@ input[type="text"] {
   cursor: pointer;
 }
 
-.btn-grid button:active {
+.btn-grid:active {
   transform: scale(0.99);
 }
 
