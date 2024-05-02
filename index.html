@@ -10,23 +10,25 @@
     <div class="calculator">
       <input type="text" id="screen" readonly />
       <div class="btn-grid">
-        <button class="btn-clear" onclick="clearScreen()">AC</button>
-        <button class="btn-clear" onclick="clearLast()">C</button>
-        <button class="btn" onclick="appendToScreen('.')">.</button>
-        <button class="btn-clear" onclick="calculate()">=</button>
-        <button class="btn" onclick="setOperator('+')">+</button>
+        <button class="btn" id="operator" onclick="clearScreen()">AC</button>
+        <button class="btn" id="operator" onclick="clearLast()">C</button>
+        <button class="btn" id="operator" onclick="appendToScreen('.')">
+          •
+        </button>
+        <button class="btn" id="operator" onclick="calculate()">=</button>
+        <button class="btn" id="operator" onclick="setOperator('+')">+</button>
         <button class="btn" onclick="appendToScreen('7')">7</button>
         <button class="btn" onclick="appendToScreen('8')">8</button>
         <button class="btn" onclick="appendToScreen('9')">9</button>
-        <button class="btn" onclick="setOperator('-')">-</button>
+        <button class="btn" id="operator" onclick="setOperator('-')">-</button>
         <button class="btn" onclick="appendToScreen('4')">4</button>
         <button class="btn" onclick="appendToScreen('5')">5</button>
         <button class="btn" onclick="appendToScreen('6')">6</button>
-        <button class="btn" onclick="setOperator('×')">×</button>
+        <button class="btn" id="operator" onclick="setOperator('×')">×</button>
         <button class="btn" onclick="appendToScreen('1')">1</button>
         <button class="btn" onclick="appendToScreen('2')">2</button>
         <button class="btn" onclick="appendToScreen('3')">3</button>
-        <button class="btn" onclick="setOperator('÷')">÷</button>
+        <button class="btn" id="operator" onclick="setOperator('÷')">÷</button>
         <button class="btn" onclick="appendToScreen('0')">0</button>
       </div>
     </div>
